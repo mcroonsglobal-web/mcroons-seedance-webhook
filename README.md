@@ -57,3 +57,11 @@ curl -X POST https://mcroons-seedance-webhook.vercel.app/api/seedance \
 ## Related
 - TikTok OAuth catcher: `mcroons-oauth-catcher.vercel.app` (similar deployment)
 - Infrastructure: Vercel team `mcroonsglobal-2791`
+
+## Claude Code Skills
+
+This repo has [`sergebulaev/linkedin-skills`](https://github.com/sergebulaev/linkedin-skills) installed as project-scoped Claude Code skills under `.claude/`, for drafting and scheduling LinkedIn posts to accompany generated Seedance content.
+
+- **Location:** `.claude/skills/` (11 skills: post writer, comment drafter, reply handler, humanizer, hook extractor, content planner, engagement monitor, profile optimizer, employee advocacy, repurposer, thread monitor), with shared code in `.claude/lib/` and docs in `.claude/references/`.
+- **Setup (optional):** copy `.claude/.env.example` to `.claude/.env` and fill in `PUBLORA_API_KEY` (auto-publish), `APIFY_TOKEN` (read LinkedIn posts/comments), and/or `PIXFARO_TOKEN` (illustrations). Skills work in draft-only mode with no keys set. Then `pip install -r .claude/requirements.txt`.
+- **License:** MIT, see `.claude/LICENSE`.
