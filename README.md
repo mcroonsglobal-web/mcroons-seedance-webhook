@@ -83,6 +83,8 @@ This repo also has [`emilkowalski/skills`](https://github.com/emilkowalski/skill
 - **No setup required** — pure markdown skills, no dependencies or API keys.
 - **Try it:** ask Claude to "animate this modal", "review the animations in this diff", or "what should I use for a toast?" — the right skill activates automatically.
 
+This repo also has the `design-taste-frontend` skill from [`Leonxlnx/taste-skill`](https://github.com/Leonxlnx/taste-skill) (MIT, Copyright (c) 2026 Leonxlnx) at `.claude/skills/design-taste-frontend/` — anti-generic-AI-look guidance for landing pages, portfolios, and redesigns (brief inference, design-system picks, pre-flight checks). No setup required.
+
 ## MCP Connectors
 
 `.mcp.json` registers two project-scoped MCP servers for Claude Code sessions opened in this repo:
