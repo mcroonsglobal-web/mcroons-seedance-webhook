@@ -77,6 +77,27 @@ This repo has [`sergebulaev/linkedin-skills`](https://github.com/sergebulaev/lin
 
 Every skill drafts and waits for approval before publishing anything.
 
+This repo also has [`emilkowalski/skills`](https://github.com/emilkowalski/skills) installed under `.claude/skills/` — design/animation skills (MIT, Copyright (c) 2026 Emil Kowalski) for building and reviewing UI motion:
+
+- **Location:** `.claude/skills/` (12 skills: `animate`, `animate-expo`, `animation-vocabulary`, `apple-design`, `ask-sonner`, `emil-design-eng`, `find-animation-opportunities`, `improve-animations`, `pick-ui-library`, `prototype`, `review-animations`, `write-swift`).
+- **No setup required** — pure markdown skills, no dependencies or API keys.
+- **Try it:** ask Claude to "animate this modal", "review the animations in this diff", or "what should I use for a toast?" — the right skill activates automatically.
+
+This repo also has the `design-taste-frontend` skill from [`Leonxlnx/taste-skill`](https://github.com/Leonxlnx/taste-skill) (MIT, Copyright (c) 2026 Leonxlnx) at `.claude/skills/design-taste-frontend/` — anti-generic-AI-look guidance for landing pages, portfolios, and redesigns (brief inference, design-system picks, pre-flight checks). No setup required.
+
+### Not installed: impeccable
+
+[`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) is **not** installed here and needs to be set up manually from a local (non-remote) Claude Code session:
+
+```bash
+/plugin marketplace add pbakaus/impeccable
+# then, from the project root:
+npx impeccable install
+/impeccable init
+```
+
+It couldn't be installed from this repo's Claude Code sessions because `/plugin` isn't available outside a local interactive session, and `npx impeccable install` downloads a compiled bundle from `impeccable.style`, a host blocked by the remote session's network egress policy.
+
 ## MCP Connectors
 
 `.mcp.json` registers two project-scoped MCP servers for Claude Code sessions opened in this repo:
