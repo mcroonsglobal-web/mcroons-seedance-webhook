@@ -88,13 +88,13 @@ def update_shopify_product(product_id, new_image_url):
         return False
 
 
-@app.get("/")
+@app.get("/api/seedance")
 def health_check():
     """Health check endpoint -- GET /api/seedance"""
     return {"status": "operational"}
 
 
-@app.post("/")
+@app.post("/api/seedance")
 async def handle_webhook(request: Request):
     """Webhook receiver -- POST /api/seedance"""
     body = await request.body()
