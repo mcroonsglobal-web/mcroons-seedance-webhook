@@ -85,6 +85,19 @@ This repo also has [`emilkowalski/skills`](https://github.com/emilkowalski/skill
 
 This repo also has the `design-taste-frontend` skill from [`Leonxlnx/taste-skill`](https://github.com/Leonxlnx/taste-skill) (MIT, Copyright (c) 2026 Leonxlnx) at `.claude/skills/design-taste-frontend/` — anti-generic-AI-look guidance for landing pages, portfolios, and redesigns (brief inference, design-system picks, pre-flight checks). No setup required.
 
+### Not installed: impeccable
+
+[`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) is **not** installed here and needs to be set up manually from a local (non-remote) Claude Code session:
+
+```bash
+/plugin marketplace add pbakaus/impeccable
+# then, from the project root:
+npx impeccable install
+/impeccable init
+```
+
+It couldn't be installed from this repo's Claude Code sessions because `/plugin` isn't available outside a local interactive session, and `npx impeccable install` downloads a compiled bundle from `impeccable.style`, a host blocked by the remote session's network egress policy.
+
 ## MCP Connectors
 
 `.mcp.json` registers two project-scoped MCP servers for Claude Code sessions opened in this repo:
