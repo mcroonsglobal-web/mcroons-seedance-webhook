@@ -1,0 +1,15 @@
+{
+  "runtime": "python3.9",
+  "functions": {
+    "api/seedance.py": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "SEEDANCE_WEBHOOK_SECRET": "@seedance_webhook_secret",
+    "META_ACCESS_TOKEN": "@meta_access_token",
+    "SHOPIFY_ACCESS_TOKEN": "@shopify_access_token",
+    "SHOPIFY_STORE_DOMAIN": "@shopify_store_domain"
+  }
+}
