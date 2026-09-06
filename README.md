@@ -57,3 +57,11 @@ curl -X POST https://mcroons-seedance-webhook.vercel.app/api/seedance \
 ## Related
 - TikTok OAuth catcher: `mcroons-oauth-catcher.vercel.app` (similar deployment)
 - Infrastructure: Vercel team `mcroonsglobal-2791`
+
+## MCP Connectors
+
+`.mcp.json` registers two project-scoped MCP servers for Claude Code sessions opened in this repo:
+- **figma** — Figma's remote MCP server (`https://mcp.figma.com/mcp`), for pulling design context from Figma files.
+- **playwright** — `@playwright/mcp`, for browser automation and screenshot-driven testing.
+
+Claude Code prompts to approve project MCP servers the first time they're used.
