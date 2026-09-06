@@ -76,3 +76,11 @@ This repo has [`sergebulaev/linkedin-skills`](https://github.com/sergebulaev/lin
 5. **End of week — review:** check which hooks drove comments/DMs from the right people, not just impressions.
 
 Every skill drafts and waits for approval before publishing anything.
+
+## MCP Connectors
+
+`.mcp.json` registers two project-scoped MCP servers for Claude Code sessions opened in this repo:
+- **figma** — Figma's remote MCP server (`https://mcp.figma.com/mcp`), for pulling design context from Figma files.
+- **playwright** — `@playwright/mcp`, for browser automation and screenshot-driven testing.
+
+Claude Code prompts to approve project MCP servers the first time they're used.
